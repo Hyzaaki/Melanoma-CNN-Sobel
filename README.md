@@ -10,6 +10,7 @@ O objetivo do trabalho é demonstrar a aplicabilidade de conceitos fundamentais 
 
 O repositório está organizado da seguinte forma:
 
+```bash
 .
 ├── app/
 │   ├── gerar_dataset_sobel.py   # Script para pré-processar o dataset com filtro de Sobel.
@@ -27,6 +28,7 @@ filtro de Sobel.
 ├── modelo/                     # Onde o modelo treinado será salvo.
 ├── README.md                   # Este arquivo.
 └── requirements.txt            # Dependências do projeto.
+```
 
 ## Fundamentação Técnica
 
