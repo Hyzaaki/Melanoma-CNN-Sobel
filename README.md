@@ -10,6 +10,7 @@ O objetivo do trabalho é demonstrar a aplicabilidade de conceitos fundamentais 
 
 O repositório está organizado da seguinte forma:
 
+```bash
 .
 ├── app/
 │   ├── gerar_dataset_sobel.py   # Script para pré-processar o dataset com filtro de Sobel.
@@ -27,18 +28,19 @@ filtro de Sobel.
 ├── modelo/                     # Onde o modelo treinado será salvo.
 ├── README.md                   # Este arquivo.
 └── requirements.txt            # Dependências do projeto.
+```
 
 ## Fundamentação Técnica
 
-* **Processamento de Imagens**: O pré-processamento manual das imagens é uma etapa crucial. Ele inclui conversão para tons de cinza, equalização de histograma, suavização com filtro Gaussiano e, por fim, a aplicação do **filtro de Sobel** para detecção de bordas[cite: 36, 138, 139].
-* **Correlação e Convolução**: As operações de correlação e convolução 2D são a base da extração de características em imagens[cite: 9, 10]. O projeto implementa manualmente essas operações para fins didáticos, aplicando-as ao filtro de Sobel para realçar as bordas das lesões[cite: 12, 56].
-* **CNN (Rede Neural Convolucional)**: Uma arquitetura CNN simples é usada para a classificação final. O modelo é composto por camadas convolucionais (para extrair features), de pooling (para reduzir a dimensionalidade) e camadas densas (para a classificação binária)[cite: 174, 186, 187, 188, 190].
+* **Processamento de Imagens**: O pré-processamento manual das imagens é uma etapa crucial. Ele inclui conversão para tons de cinza, equalização de histograma, suavização com filtro Gaussiano e, por fim, a aplicação do **filtro de Sobel** para detecção de bordas.
+* **Correlação e Convolução**: As operações de correlação e convolução 2D são a base da extração de características em imagens. O projeto implementa manualmente essas operações para fins didáticos, aplicando-as ao filtro de Sobel para realçar as bordas das lesões.
+* **CNN (Rede Neural Convolucional)**: Uma arquitetura CNN simples é usada para a classificação final. O modelo é composto por camadas convolucionais (para extrair features), de pooling (para reduzir a dimensionalidade) e camadas densas (para a classificação binária).
 
 ---
 
 ## Conjunto de Dados
 
-O projeto utiliza o **Skin Cancer MNIST: HAM10000**, uma base de dados pública com mais de 10.000 imagens dermatoscópicas[cite: 124, 126]. Para o escopo deste trabalho, foram selecionadas as classes `melanoma` (maligno) e `lesões benignas`[cite: 128].
+O projeto utiliza o **Skin Cancer MNIST: HAM10000**, uma base de dados pública com mais de 10.000 imagens dermatoscópicas. Para o escopo deste trabalho, foram selecionadas as classes `melanoma` (maligno) e `lesões benignas`.
 
 ---
 
@@ -50,8 +52,8 @@ Certifique-se de ter o **Python 3.10.11** instalado. Recomenda-se o uso de um am
 ### Instalação
 Clone o repositório e instale as dependências:
 ```bash
-git clone <https://github.com/Hyzaaki/Melanoma-CNN-Sobel.git>
-cd <https://github.com/Hyzaaki/Melanoma-CNN-Sobel.git>
+git clone https://github.com/Hyzaaki/Melanoma-CNN-Sobel.git
+cd https://github.com/Hyzaaki/Melanoma-CNN-Sobel.git
 pip install -r requirements.txt
 ```
 ---
