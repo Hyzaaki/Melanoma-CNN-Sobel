@@ -52,8 +52,8 @@ Certifique-se de ter o **Python 3.10.11** instalado. Recomenda-se o uso de um am
 ### Instalação
 Clone o repositório e instale as dependências:
 ```bash
-git clone <https://github.com/Hyzaaki/Melanoma-CNN-Sobel.git>
-cd <https://github.com/Hyzaaki/Melanoma-CNN-Sobel.git>
+git clone https://github.com/Hyzaaki/Melanoma-CNN-Sobel.git
+cd https://github.com/Hyzaaki/Melanoma-CNN-Sobel.git
 pip install -r requirements.txt
 ```
 ---
